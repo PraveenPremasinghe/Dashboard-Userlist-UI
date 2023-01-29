@@ -118,20 +118,19 @@ color: #8B8B8B;
     margin-right: auto;
 }
 
-.dashboard-nav a {
-    color: #515151;
-}
 
 .dashboard-nav a:hover {
     text-decoration: none;
+    color: #fff;
 }
+
 
 .dashboard-nav {
     background: linear-gradient(180.15deg, #820263 0.12%, #D90368 99.87%);
 }
 
 .dashboard-nav a {
-    color: #fff;
+    color: rgba(29, 247, 0, 0.968);
 }
 
 
@@ -190,10 +189,7 @@ font-weight: 500;
 
 
 
-a{
-    text-decoration: none;
-    color: yellowgreen;
-}
+
 
 
 
@@ -386,6 +382,9 @@ border-radius: 50px;
 border: none;
 min-width: 130px;
 cursor: pointer;
+text-decoration: none;
+outline: 0 !important;
+
 }
 
   .Export-button{
@@ -402,6 +401,8 @@ color: #04A777;
 background-color: #FFFFFF;
 min-width: 130px;
 cursor: pointer;
+text-decoration: none;
+outline: 0 !important;
 
 
   }
@@ -409,6 +410,8 @@ cursor: pointer;
   .Adduser-button-flex{
     display: flex;
     gap: 14px;
+
+
   }
 
   .search-bar{
@@ -594,6 +597,20 @@ border-radius: 7px;
      .upload-image{
         margin-top: 10px;
      }
+
+
+     .icon-box {
+     
+        margin: 0 auto;
+        border-radius: 50%;
+        z-index: 9;
+        text-align: center;
+        
+    }
+    .warning-text{
+        margin: 0 auto;
+    }
+
 
 @media (min-width: 992px) {
     .dashboard-app {
