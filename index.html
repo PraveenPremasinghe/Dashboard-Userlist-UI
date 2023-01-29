@@ -58,7 +58,7 @@
                         <div class="Notification_icon"> <img class="circular--profile" src="./image/admin-img.png" /> </div>
                         <div class="Card_message">
                            <div class="Profile_name">Sophie Garcia</div>
-                           <div > <span class="Message">Admin</span>  </div>
+                           <div > <span class="Role">Admin</span>  </div>
                         </div>
                      </div>
                   </div>
@@ -91,7 +91,7 @@
 
                   <div class="Adduser-button-flex">
 
-                    <button class="Adduser-Button"> <iconify-icon icon="iconoir:add-user" width="20" height="20"></iconify-icon> 
+                    <button class="Adduser-Button" data-toggle="modal" data-target="#exampleModalCenter"> <iconify-icon icon="iconoir:add-user" width="20" height="20"></iconify-icon> 
                       &nbsp; Add User 
                    </button>
                    <button class="Export-button"> <iconify-icon icon="tabler:download" width="20" height="20"></iconify-icon>
@@ -106,64 +106,334 @@
                 <hr class="hr-line"/>
 
 
-                <!-- //////////////////////////////////////////////////////////////////////////////////// -->
+             <!-- User List -->
                 <div class="table-responsive">
                   <table class="table">
                     <thead>
                       <tr>
-                        <th scope="col">#</th>
-                        <th scope="col">Heading</th>
-                        <th scope="col">Heading</th>
-                        <th scope="col">Heading</th>
-                        <th scope="col">Heading</th>
-                        <th scope="col">Heading</th>
-                        <th scope="col">Heading</th>
-                        <th scope="col">Heading</th>
-                        <th scope="col">Heading</th>
-                        <th scope="col">Heading</th>
+                        <th scope="col">ID</th>
+                        <th scope="col">Profile</th>
+                        <th scope="col">Last Name</th>
+                        <th scope="col">Gender</th>
+                        <th scope="col">Age</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Status</th>
+                        <th scope="col"></th>
+                      
                       </tr>
                     </thead>
                     <tbody>
                       <tr>
                         <th scope="row">1</th>
-                        <td>Cell</td>
-                        <td>Cell</td>
-                        <td>Cell</td>
-                        <td>Cell</td>
-                        <td>Cell</td>
-                        <td>Cell</td>
-                        <td>Cell</td>
-                        <td>Cell</td>
-                        <td>Cell</td>
+                        <td>  
+                          <div class="profile-items">
+                          <div class="Notification-user">
+                            <div class="profile_icon"> <img src="./image/admin-img.png" width="70%"/> </div>
+                             <div class="Card_message">
+                                <div class="User_name">James</div>
+                                <div  class="User-title" > Loyalty User  </div>
+                             </div>
+                          </div>
+                       </div>
+                      
+                      </td>
+                        <td>Hooper</td>
+                        <td>Male</td>
+                        <td>21</td>
+                        <td>jameshooper@gmail.com</td>
+                        <td>  <span class="Completed">Completed</span></td>
+                        <td><div class="row">
+                          <div class="col Custormize-edit" data-toggle="modal" data-target="#editmodal" ><iconify-icon icon="lucide:edit" width="16" height="16"></iconify-icon></div>
+                          <div class="col Custormize-delete"><iconify-icon icon="fluent:delete-24-regular" width="17" height="17"></iconify-icon></div>
+
+
+                          
+                        </div></td>
                       </tr>
+                      
                       <tr>
                         <th scope="row">2</th>
-                        <td>Cell</td>
-                        <td>Cell</td>
-                        <td>Cell</td>
-                        <td>Cell</td>
-                        <td>Cell</td>
-                        <td>Cell</td>
-                        <td>Cell</td>
-                        <td>Cell</td>
-                        <td>Cell</td>
-                      </tr>
+                        <td>  
+                          <div class="profile-items">
+                          <div class="Notification-user">
+                            <div class="profile_icon"> <img src="./image/admin-img.png" width="70%"/> </div>
+                             <div class="Card_message">
+                                <div class="User_name">James</div>
+                                <div  class="User-title" > Loyalty User  </div>
+                             </div>
+                          </div>
+                       </div>
+                      
+                      </td>
+                        <td>Hooper</td>
+                        <td>Male</td>
+                        <td>21</td>
+                        <td>jameshooper@gmail.com</td>
+                        <td>  <span class="Completed">Completed</span></td>
+                        <td><div class="row">
+                           <div class="col Custormize-edit" ><iconify-icon icon="lucide:edit" width="16" height="16"></iconify-icon></div>
+                           <div class="col Custormize-delete"><iconify-icon icon="fluent:delete-24-regular" width="17" height="17"></iconify-icon></div>
+                         </div></td>
+                        </tr>
+
                       <tr>
                         <th scope="row">3</th>
-                        <td>Cell</td>
-                        <td>Cell</td>
-                        <td>Cell</td>
-                        <td>Cell</td>
-                        <td>Cell</td>
-                        <td>Cell</td>
-                        <td>Cell</td>
-                        <td>Cell</td>
-                        <td>Cell</td>
+                        <td>  
+                          <div class="profile-items">
+                          <div class="Notification-user">
+                            <div class="profile_icon"> <img src="./image/admin-img.png" width="70%"/> </div>
+                             <div class="Card_message">
+                                <div class="User_name">James</div>
+                                <div  class="User-title" > Loyalty User  </div>
+                             </div>
+                          </div>
+                       </div>
+                      
+                      </td>
+                        <td>Hooper</td>
+                        <td>Male</td>
+                        <td>21</td>
+                        <td>jameshooper@gmail.com</td>
+                        <td>  <span class="Pending">Pending</span></td>
+                        <td><div class="row">
+                          <div class="col Custormize-edit" ><iconify-icon icon="lucide:edit" width="16" height="16"></iconify-icon></div>
+                          <div class="col Custormize-delete"><iconify-icon icon="fluent:delete-24-regular" width="17" height="17"></iconify-icon></div>
+                        </div></td>
                       </tr>
-                    </tbody>
+
+                      <tr>
+                        <th scope="row">4</th>
+                        <td>  
+                          <div class="profile-items">
+                          <div class="Notification-user">
+                            <div class="profile_icon"> <img src="./image/admin-img.png" width="70%"/> </div>
+                             <div class="Card_message">
+                                <div class="User_name">James</div>
+                                <div  class="User-title" > Loyalty User  </div>
+                             </div>
+                          </div>
+                       </div>
+                      
+                      </td>
+                        <td>Hooper</td>
+                        <td>Male</td>
+                        <td>21</td>
+                        <td>jameshooper@gmail.com</td>
+                        <td>  <span class="Completed">Completed</span></td>
+                        <td><div class="row">
+                          <div class="col Custormize-edit" ><iconify-icon icon="lucide:edit" width="16" height="16"></iconify-icon></div>
+                          <div class="col Custormize-delete"><iconify-icon icon="fluent:delete-24-regular" width="17" height="17"></iconify-icon></div>
+                        </div></td>
+                      </tr>
+
+                      <tr>
+                        <th scope="row">5</th>
+                        <td>  
+                          <div class="profile-items">
+                          <div class="Notification-user">
+                            <div class="profile_icon"> <img src="./image/admin-img.png" width="70%"/> </div>
+                             <div class="Card_message">
+                                <div class="User_name">James</div>
+                                <div  class="User-title" > Loyalty User  </div>
+                             </div>
+                          </div>
+                       </div>
+                      
+                      </td>
+                        <td>Hooper</td>
+                        <td>Male</td>
+                        <td>21</td>
+                        <td>jameshooper@gmail.com</td>
+                        <td>  <span class="incomplete">incomplete</span></td>
+                        <td><div class="row">
+                          <div class="col Custormize-edit" ><iconify-icon icon="lucide:edit" width="16" height="16"></iconify-icon></div>
+                          <div class="col Custormize-delete"><iconify-icon icon="fluent:delete-24-regular" width="17" height="17"></iconify-icon></div>
+                        </div></td>
+                      </tr>
+
+                      <tr>
+                        <th scope="row">6</th>
+                        <td>  
+                          <div class="profile-items">
+                          <div class="Notification-user">
+                            <div class="profile_icon"> <img src="./image/admin-img.png" width="70%"/> </div>
+                             <div class="Card_message">
+                                <div class="User_name">James</div>
+                                <div  class="User-title" > Loyalty User  </div>
+                             </div>
+                          </div>
+                       </div>
+                      
+                      </td>
+                        <td>Hooper</td>
+                        <td>Male</td>
+                        <td>21</td>
+                        <td>jameshooper@gmail.com</td>
+                        <td>  <span class="Completed">Completed</span></td>
+                        <td><div class="row">
+                          <div class="col Custormize-edit" ><iconify-icon icon="lucide:edit" width="16" height="16"></iconify-icon></div>
+                          <div class="col Custormize-delete"><iconify-icon icon="fluent:delete-24-regular" width="17" height="17"></iconify-icon></div>
+                        </div></td>
+                      </tr>
+
+                      <tr>
+                        <th scope="row">7</th>
+                        <td>  
+                          <div class="profile-items">
+                          <div class="Notification-user">
+                            <div class="profile_icon"> <img src="./image/admin-img.png" width="70%"/> </div>
+                             <div class="Card_message">
+                                <div class="User_name">James</div>
+                                <div  class="User-title" > Loyalty User  </div>
+                             </div>
+                          </div>
+                       </div>
+                      
+                      </td>
+                        <td>Hooper</td>
+                        <td>Male</td>
+                        <td>21</td>
+                        <td>jameshooper@gmail.com</td>
+                        <td>  <span class="Completed">Completed</span></td>
+                        <td><div class="row">
+                           <div class="col Custormize-edit" ><iconify-icon icon="lucide:edit" width="16" height="16"></iconify-icon></div>
+                           <div class="col Custormize-delete"><iconify-icon icon="fluent:delete-24-regular" width="17" height="17"></iconify-icon></div>
+                        </div></td>
+                      </tr>
+                      </tbody>
                   </table>
                 </div>
-                <!-- //////////////////////////////////////////////////////////////////////////////////// -->
+                           <!-- User List -->
+
+
+
+                <!-- Add user modal -->
+
+ <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+   <div class="modal-dialog modal-dialog-centered" role="document">
+     <div class="modal-content">
+       <div class="modal-header" style="background: linear-gradient(89.93deg, #820263 0.05%, #D90368 99.94%);">
+         <h5 class="modal-title" id="exampleModalLongTitle" style="color: #ffff;"> Add User </h5>
+         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+           <span aria-hidden="true">&times;</span>
+         </button>
+       </div>
+       <div class="modal-body">
+         <form>
+
+            <div class="row">
+               <div class="col-6">   <div class="form-group">
+                  <label for="exampleInputtext1">First Name</label>
+                  <input type="text" class="form-control" id="exampleInputtext1" aria-describedby="textHelp" placeholder="First Name">
+                </div></div>
+               <div class="col-6">   <div class="form-group">
+                  <label for="exampleInputtext1">Last Name</label>
+                  <input type="text" class="form-control" id="exampleInputtext1" aria-describedby="textHelp" placeholder="Last Name">
+                  
+                </div></div>
+            </div>
+
+
+            <div class="form-group">
+               <label for="exampleInputtext1">Gender</label>
+               <input type="text" class="form-control" id="exampleInputtext1" aria-describedby="textHelp" placeholder="Gender">
+                </div>
+
+                <div class="form-group">
+                  <label for="exampleInputtext1">Age</label>
+                  <input type="Number" class="form-control" id="exampleInputtext1" aria-describedby="textHelp" placeholder="Age">
+                   </div>
+
+
+
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Upload Profile Picture</label>
+                  <form  action="" method="POST">
+               <img class="upload-image" src="image/2upload.png" alt="image upload" id="picture" width="100%"><br/><br/>
+               <input id="fileinput" type="file" name="fileinput" style="display:none"/>
+            </form>
+         </div>
+      </form>
+       </div>
+       <div class="modal-footer">
+         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+         <button type="button" class="btn btn-primary">Save changes</button>
+       </div>
+     </div>
+   </div>
+ </div>
+                <!-- Add user modal -->
+
+
+
+                      <!-- Edit user modal -->
+
+ <div class="modal fade" id="editmodal" tabindex="-1" role="dialog" aria-labelledby="editmodalTitle" aria-hidden="true">
+   <div class="modal-dialog modal-dialog-centered" role="document">
+     <div class="modal-content">
+       <div class="modal-header" style="background: linear-gradient(89.93deg, #820263 0.05%, #D90368 99.94%);">
+         <h5 class="modal-title" id="editmodalTitle" style="color: #ffff;"> Add User0000000 </h5>
+         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+           <span aria-hidden="true">&times;</span>
+         </button>
+       </div>
+       <div class="modal-body">
+         <form>
+
+            <div class="row">
+               <div class="col-6">   <div class="form-group">
+                  <label for="exampleInputtext1">First Name</label>
+                  <input type="text" class="form-control" id="exampleInputtext1" aria-describedby="textHelp" placeholder="First Name">
+                </div></div>
+               <div class="col-6">   <div class="form-group">
+                  <label for="exampleInputtext1">Last Name</label>
+                  <input type="text" class="form-control" id="exampleInputtext1" aria-describedby="textHelp" placeholder="Last Name">
+                  
+                </div></div>
+            </div>
+
+
+            <div class="form-group">
+               <label for="exampleInputtext1">Gender</label>
+               <input type="text" class="form-control" id="exampleInputtext1" aria-describedby="textHelp" placeholder="Gender">
+                </div>
+
+                <div class="form-group">
+                  <label for="exampleInputtext1">Age</label>
+                  <input type="Number" class="form-control" id="exampleInputtext1" aria-describedby="textHelp" placeholder="Age">
+                   </div>
+
+
+
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Upload Profile Picture</label>
+                  <form  action="" method="POST">
+               <img class="upload-image" src="image/2upload.png" alt="image upload" id="picture" width="100%"><br/><br/>
+               <input id="fileinput" type="file" name="fileinput" style="display:none"/>
+            </form>
+         </div>
+      </form>
+       </div>
+       <div class="modal-footer">
+         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+         <button type="button" class="btn btn-primary">Save changes</button>
+       </div>
+     </div>
+   </div>
+ </div>
+                <!-- Edit user modal -->
+
+
             </div>
 
             </div>
