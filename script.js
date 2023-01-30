@@ -24,9 +24,9 @@ $(function() {
     });
     });
 
-    // Data download to excel sheet
-    
 
+
+    // Data download to excel sheet
     function ExportToExcel(type, fn, dl) {
         var elt = document.getElementById('usertablesheet');
         var wb = XLSX.utils.table_to_book(elt, { sheet: "sheet1" });
