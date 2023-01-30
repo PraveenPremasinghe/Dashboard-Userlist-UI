@@ -517,7 +517,7 @@
          display: -webkit-flex;
          display: -ms-flexbox;
          display: flex;
-         color: linear-gradient(180.15deg, #820263 0.12%, #D90368 99.87%);
+         background: linear-gradient(180.15deg, #820263 0.12%, #D90368 99.87%);
          
     }
 }
