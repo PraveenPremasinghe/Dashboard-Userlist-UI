@@ -250,6 +250,7 @@
      border-radius: 8px;
      color: #04A777;
      padding: 10px 13px 10px 13px;
+     width: 100%;
 }
  .userlist-container {
      margin-top: 10px;
@@ -295,7 +296,7 @@
      color: #202020;
 }
  .Adduser-Button{
-     padding: 6px 20px 6px 20px;
+     padding: 6px 15px 6px 15px;
      display: flex;
      -webkit-align-items: center;
      font-family: 'Poppins';
@@ -494,9 +495,7 @@
      .dashboard-content {
          padding: 15px 0px;
     }
-    .mobileresponsive{
-        display: none;
-    }
+   
 }
  @media (max-width: 992px) {
      .dashboard-nav {
@@ -530,3 +529,83 @@
          left: 0;
     }
 }
+
+
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+  
+    .mobileresponsive{
+        display:none;
+    }
+
+    .desktopresponsive{
+        display:block;
+    }
+    
+  }
+  
+  /* 
+    ##Device = Laptops, Desktops
+    ##Screen = B/w 1025px to 1280px
+  */
+  
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    
+    /* CSS */
+    
+  }
+  
+  /* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) {
+    
+    /* CSS */
+    
+  }
+  
+  /* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    
+    /* CSS */
+    
+  }
+  
+  /* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+  
+  @media (min-width: 481px) and (max-width: 767px) {
+    
+    /* CSS */
+    
+  }
+  
+  /* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+  
+  @media (min-width: 320px) and (max-width: 480px) {
+    
+    .desktopresponsive{
+        display:none;
+    }
+
+    .mobileresponsive{
+        display:block;
+    }
+    
+  }
