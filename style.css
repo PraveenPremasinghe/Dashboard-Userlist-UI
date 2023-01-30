@@ -387,9 +387,7 @@
 }
 
 
-.profile_icon img{
-    /* width: 80%;   */
-}
+
  .User_name{
      font-family: 'Poppins';
      font-style: normal;
@@ -551,6 +549,10 @@
     .desktopresponsive{
         display:block;
     }
+
+    .profile_icon img{
+        width: 80%;
+    }
     
   }
   
@@ -611,6 +613,10 @@
 
     .mobileresponsive{
         display:block;
+    }
+
+    .profile_icon img{
+        width: 100%;
     }
     
   }
